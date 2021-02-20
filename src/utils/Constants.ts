@@ -1,0 +1,16 @@
+export enum Colours {
+  Primary = "#F7E16E",
+  Secondary = "#2AC49A",
+  Error = "#F15E27",
+  Warning = "#FC9A06",
+  Info = "#78D3DE",
+  Success = "#37D7AB",
+  CaribbeanGreen = "#2AC49A",
+  Skobeloff = "#1D6164",
+  SkyBlueCrayola = "#78D3DE",
+  NaplesYellow = "#F7E16E",
+  Coral = "#F78E67",
+  Black = "#000000",
+  White = "#FFFFFF",
+  Grey = "#F5F5F5",
+}

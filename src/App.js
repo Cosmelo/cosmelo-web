@@ -1,13 +1,53 @@
 import React from "react";
 import { makeStyles, ThemeProvider } from "@material-ui/core/styles";
-import Button from "@material-ui/core/Button";
+import { Box, Button } from "@material-ui/core";
 import { theme } from "./Theme.ts";
+import { Colours } from "./utils/Constants";
 import Typography from "@material-ui/core/Typography";
 import MobileStepper from "@material-ui/core/MobileStepper";
+import { ScoringInfoPanel } from "./ScoringInfoPanel";
+import { ProductBarInfoPage } from "./ProductBarInfoPage";
+import { CatalogueInfoPage } from "./CatalogueInfoPage";
+import { FinishPage } from "./FinishPage";
 
 const useStyles = makeStyles((theme) => ({
-  margin: {
-    margin: theme.spacing(1),
+  app: {
+    display: "flex",
+    flexDirection: "column",
+    margin: "auto",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  navContainer: {
+    position: "absolute",
+    bottom: 200,
+    justifyContent: "center",
+    alignItems: "center",
+    // display: "flex",
+    // flexDirection: "column",
+    // alignItems: "center",
+    // justifyContent: "center",
+  },
+  navButtons: {
+    display: "flex",
+    flexDirection: "row",
+    margin: "auto",
+  },
+  skipButton: {
+    position: "absolute",
+    bottom: 20,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  stepper: {
+    background: "white",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  stepperDotActive: {
+    background: Colours.Skobeloff,
   },
 }));
 
@@ -24,31 +64,48 @@ function App() {
   };
 
   const handleSkip = () => {
-    console.log("skippppp");
+    setActiveStep(3);
   };
+
+  const handleFinish = () => {
+    window.open("http://www.sephora.com");
+  };
+
   return (
-    <div className="App">
+    <div className={classes.app}>
+      {activeStep === 0 && <ScoringInfoPanel />}
+      {activeStep === 1 && <ProductBarInfoPage />}
+      {activeStep === 2 && <CatalogueInfoPage />}
+      {activeStep === 3 && <FinishPage />}
       <ThemeProvider theme={theme}>
-        <Button onClick={handleBack} disabled={activeStep === 0}>
-          <Typography variant="button">back</Typography>
-        </Button>
-        <Button
-          variant="contained"
-          color="primary"
-          className={classes.margin}
-          onClick={handleNext}
-        >
-          <Typography variant="button">
-            {activeStep === 5 ? "finish" : "next"}
-          </Typography>
-        </Button>
-        <MobileStepper
-          variant="dots"
-          steps={6}
-          position="static"
-          activeStep={activeStep}
-        />
-        <Button onClick={handleSkip}>
+        <Box className={classes.navContainer}>
+          <Box className={classes.navButtons}>
+            <Button onClick={handleBack} disabled={activeStep === 0}>
+              <Typography variant="button">
+                {activeStep === 0 ? "" : "back"}
+              </Typography>
+            </Button>
+            <Button
+              variant="contained"
+              onClick={activeStep === 3 ? handleFinish : handleNext}
+            >
+              <Typography variant="button">
+                {activeStep === 3 ? "finish" : "next"}
+              </Typography>
+            </Button>
+          </Box>
+          <MobileStepper
+            variant="dots"
+            steps={4}
+            position="static"
+            activeStep={activeStep}
+            classes={{
+              root: classes.stepper,
+              dotActive: classes.stepperDotActive,
+            }}
+          />
+        </Box>
+        <Button onClick={handleSkip} className={classes.skipButton}>
           <Typography variant="caption">Skip tutorial</Typography>
         </Button>
       </ThemeProvider>
