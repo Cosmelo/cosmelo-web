@@ -1,0 +1,122 @@
+import { createMuiTheme } from "@material-ui/core/styles";
+import { Colours } from "./Colours";
+
+export const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: Colours.Primary,
+    },
+    secondary: {
+      main: Colours.Secondary,
+    },
+    error: {
+      main: Colours.Error,
+    },
+  },
+  typography: {
+    fontFamily: ["Proza Libre", "Open Sans"].join(","),
+    h1: {
+      fontFamily: "Proza Libre",
+      fontWeight: 400,
+      fontStyle: "normal",
+      fontSize: "96px",
+      lineHeight: "112px",
+      letterSpacing: "-1.5px",
+    },
+    h2: {
+      fontFamily: "Proza Libre",
+      fontWeight: 500,
+      fontStyle: "normal",
+      fontSize: "60px",
+      lineHeight: "72px",
+      letterSpacing: "-0.5px",
+    },
+    h3: {
+      fontFamily: "Proza Libre",
+      fontWeight: 400,
+      fontStyle: "normal",
+      fontSize: "48px",
+      lineHeight: "56px",
+    },
+    h4: {
+      fontFamily: "Proza Libre",
+      fontWeight: 400,
+      fontStyle: "normal",
+      fontSize: "34px",
+      lineHeight: "36px",
+    },
+    h5: {
+      fontFamily: "Proza Libre",
+      fontWeight: 400,
+      fontStyle: "normal",
+      fontSize: "24px",
+      lineHeight: "24px",
+      letterSpacing: "0.18px",
+    },
+    h6: {
+      fontFamily: "Proza Libre",
+      fontWeight: 500,
+      fontStyle: "normal",
+      fontSize: "20px",
+      lineHeight: "24px",
+      letterSpacing: "0.15px",
+    },
+    subtitle1: {
+      fontFamily: "Proza Libre",
+      fontWeight: 600,
+      fontStyle: "normal",
+      fontSize: "16px",
+      lineHeight: "24px",
+      letterSpacing: "0.15px",
+    },
+    subtitle2: {
+      fontFamily: "Proza Libre",
+      fontWeight: 500,
+      fontStyle: "normal",
+      fontSize: "14px",
+      lineHeight: "24px",
+      letterSpacing: "0.1px",
+    },
+    body1: {
+      fontFamily: "Open Sans",
+      fontWeight: 400,
+      fontStyle: "normal",
+      fontSize: "16px",
+      lineHeight: "24px",
+      letterSpacing: "0.5px",
+    },
+    body2: {
+      fontFamily: "Open Sans",
+      fontWeight: 400,
+      fontStyle: "normal",
+      fontSize: "14px",
+      lineHeight: "20px",
+      letterSpacing: "0.25px",
+    },
+    button: {
+      fontFamily: "Proza Libre",
+      fontWeight: 500,
+      fontStyle: "normal",
+      fontSize: "14px",
+      lineHeight: "16px",
+      letterSpacing: "1.25px",
+      textTransform: "uppercase",
+    },
+    caption: {
+      fontFamily: "Open Sans",
+      fontWeight: 400,
+      fontStyle: "normal",
+      fontSize: "12px",
+      lineHeight: "16px",
+      letterSpacing: "0.4px",
+    },
+    overline: {
+      fontFamily: "Proza Libre",
+      fontWeight: 400,
+      fontStyle: "normal",
+      fontSize: "10px",
+      lineHeight: "16px",
+      letterSpacing: "1.5px",
+    },
+  },
+});
