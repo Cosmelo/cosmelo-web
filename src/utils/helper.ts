@@ -23,28 +23,20 @@ export interface ProductInfo {
 
 export const categories = {
   packaging: {
-    label: "Packaging",
-    subLabel: "Recyclability of packaging",
+    label: "Packaging Recyclability",
     colour: Colours.Skobeloff,
   },
-  disclosure: {
-    label: "Disclosure",
-    subLabel: "Animal testing",
-    colour: Colours.SkyBlueCrayola,
-  },
+  disclosure: { label: "Animal Testing", colour: Colours.SkyBlueCrayola },
   humanHealth: {
     label: "Human Health",
-    subLabel: "Risk assessment and product safety",
     colour: Colours.NaplesYellow,
   },
   supplyChainAndEnvironment: {
-    label: "Supply Chain and Environment",
-    subLabel: "Greenhouse gas emissions in manufacturing",
+    label: "Manufacturing greenhouse gas emissions",
     colour: Colours.Coral,
   },
   ethics: {
-    label: "Ethics",
-    subLabel: "Human rights / ethical labour",
+    label: "Human rights/Ethical labor",
     colour: Colours.CaribbeanGreen,
   },
 };

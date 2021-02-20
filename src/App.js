@@ -23,10 +23,6 @@ const useStyles = makeStyles((theme) => ({
     bottom: 200,
     justifyContent: "center",
     alignItems: "center",
-    // display: "flex",
-    // flexDirection: "column",
-    // alignItems: "center",
-    // justifyContent: "center",
   },
   navButtons: {
     display: "flex",

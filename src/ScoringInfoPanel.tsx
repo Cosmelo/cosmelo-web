@@ -7,13 +7,15 @@ import {
   scoringByCategory,
 } from "./utils/helper";
 import { makeStyles } from "@material-ui/core/styles";
-import Box from "@material-ui/core/Box";
-import Typography from "@material-ui/core/Typography";
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
+import {
+  Box,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableRow,
+  Typography,
+} from "@material-ui/core";
 import { Colours } from "./utils/Constants";
 
 const useOptionStyles = makeStyles({
@@ -73,7 +75,6 @@ const CategoryOption = ({
         <Typography variant="body2" style={{ fontWeight: "bold" }}>
           {categories[category].label}
         </Typography>
-        <Typography variant="body2">{categories[category].subLabel}</Typography>
       </Box>
     </Box>
   );
@@ -83,7 +84,9 @@ const useStyles = makeStyles({
   tableCard: {
     background: Colours.Grey,
     padding: "15px",
+    margin: "10px",
     borderRadius: "0 10px 10px 0",
+    width: "439px",
   },
   lastTableRow: {
     "&:last-child td": {
@@ -93,6 +96,16 @@ const useStyles = makeStyles({
   select: {
     width: "100%",
     marginBottom: "5px",
+  },
+  container: {
+    display: "flex",
+    flexDirection: "row",
+  },
+  optionsContainer: {
+    display: "flex",
+    alignItems: "left",
+    flexDirection: "column",
+    position: "relative",
   },
 });
 
@@ -105,10 +118,17 @@ export const ScoringInfoPanel = () => {
   };
 
   return (
-    <Box padding="21px 29px">
-      <Typography variant="subtitle1" style={{ marginBottom: "27px" }}>
-        Scoring
-      </Typography>
+    <Box padding="21px 29px" className={classes.container}>
+      <Box className={classes.optionsContainer}>
+        {orderedCategories.map((category) => (
+          <CategoryOption
+            category={category}
+            selected={selected === category}
+            onClick={() => handleChange(category as ScoreCategories)}
+            key={category}
+          />
+        ))}
+      </Box>
       <Box
         className={classes.tableCard}
         style={{
@@ -119,11 +139,10 @@ export const ScoringInfoPanel = () => {
         <Typography variant="body2" style={{ fontWeight: "bold" }}>
           {categories[selected].label}
         </Typography>
-        <Typography variant="body2">{categories[selected].subLabel}</Typography>
         <Table size="small">
           <TableHead>
             <TableRow>
-              <TableCell />
+              <TableCell style={{ fontWeight: "bold" }}>Points</TableCell>
               <TableCell style={{ fontWeight: "bold" }}>Metric</TableCell>
             </TableRow>
           </TableHead>
@@ -155,14 +174,6 @@ export const ScoringInfoPanel = () => {
           </TableBody>
         </Table>
       </Box>
-      {orderedCategories.map((category) => (
-        <CategoryOption
-          category={category}
-          selected={selected === category}
-          onClick={() => handleChange(category as ScoreCategories)}
-          key={category}
-        />
-      ))}
     </Box>
   );
 };
