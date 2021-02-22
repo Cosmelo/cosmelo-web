@@ -5,7 +5,6 @@ import Typography from "@material-ui/core/Typography";
 import { ReactComponent as Img1 } from "./img/img1.svg";
 import { ReactComponent as Img2 } from "./img/img2.svg";
 import { ReactComponent as Img3 } from "./img/img3.svg";
-import React from "react";
 
 const useStyles = makeStyles((theme) => ({
   imgContainer: {

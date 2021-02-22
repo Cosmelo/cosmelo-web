@@ -2,7 +2,6 @@ import React from "react";
 import { makeStyles, Box, Tooltip } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import React from "react";
 import { calculateScore, categories, orderedCategories } from "./utils/helper";
 import { randomInfo } from "./utils/data";
 import { Colours } from "./utils/Constants";
