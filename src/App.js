@@ -21,12 +21,15 @@ const useStyles = makeStyles((theme) => ({
   },
   navContainer: {
     position: "fixed",
-    bottom: "150px",
+    bottom: "119px",
   },
   backButton: {
     display: "inline-block",
-    margin: "auto",
-    float: "left",
+    position: "absolute",
+    left: "-72px",
+    paddingTop: "10px",
+    paddingBottom: "10px",
+    "&:hover": { background: "none" },
   },
   centred: {
     display: "flex",
@@ -38,13 +41,18 @@ const useStyles = makeStyles((theme) => ({
     margin: "auto",
     backgroundColor: Colours.NaplesYellow,
     width: "148px",
+    paddingTop: "10px",
+    paddingBottom: "10px",
   },
   skipButton: {
     position: "fixed",
-    bottom: "10px",
+    bottom: "25px",
+    paddingTop: "10px",
+    paddingBottom: "10px",
+    "&:hover": { background: "none" },
   },
   stepper: {
-    background: "white",
+    background: "none",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -109,13 +117,16 @@ function App() {
             {activeStep === 3 && <FinishPage />}
           </Box>
           <Box className={classes.navContainer}>
-            <Box className={classes.backButton}>
-              <Button onClick={handleBack} disabled={activeStep === 0}>
-                <Typography variant="button">
-                  {activeStep === 0 ? "" : "back"}
-                </Typography>
-              </Button>
-            </Box>
+            <Button
+              onClick={handleBack}
+              disabled={activeStep === 0}
+              disableRipple
+              className={classes.backButton}
+            >
+              <Typography variant="button" style={{ color: Colours.TextGrey }}>
+                {activeStep === 0 ? "" : "back"}
+              </Typography>
+            </Button>
             <Box className={classes.centred}>
               <Box>
                 <Button
@@ -140,8 +151,14 @@ function App() {
               />
             </Box>
           </Box>
-          <Button onClick={handleSkip} className={classes.skipButton}>
-            <Typography variant="caption">Skip tutorial</Typography>
+          <Button
+            onClick={handleSkip}
+            disableRipple
+            className={classes.skipButton}
+          >
+            <Typography variant="button" style={{ color: Colours.TextGrey }}>
+              Skip tutorial
+            </Typography>
           </Button>
         </Box>
         <BottomCorner className={classes.bottomLeftImg} />

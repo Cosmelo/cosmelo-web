@@ -61,7 +61,7 @@ const CategoryOption = ({
       display="flex"
       flexDirection="row"
       alignItems="center"
-      margin="28px 0"
+      margin="20px 0"
       alignSelf="left"
     >
       <div className={classes.wrapper}>
