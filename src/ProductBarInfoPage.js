@@ -1,11 +1,11 @@
+import React from "react";
 import { makeStyles, Box, Tooltip } from "@material-ui/core";
-import { ThemeProvider, withStyles } from "@material-ui/core/styles";
+import { withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import React from "react";
 import { calculateScore, categories, orderedCategories } from "./utils/helper";
 import { randomInfo } from "./utils/data";
 import { Colours } from "./utils/Constants";
-import { theme } from "./Theme";
 import GoodIcon from "./GoodIcon";
 import { ReactComponent as Arrow } from "./img/arrow.svg";
 
@@ -61,7 +61,7 @@ export const ProductBarInfoPage = () => {
     colour = Colours.Error;
   }
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <Typography variant="h5">
         Each category adds points to an overall product score
       </Typography>
@@ -127,6 +127,6 @@ export const ProductBarInfoPage = () => {
         amounting to a score out of 15 (3 points x 5 categories) for each
         product.
       </Typography>
-    </ThemeProvider>
+    </>
   );
 };

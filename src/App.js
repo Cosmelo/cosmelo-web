@@ -5,7 +5,7 @@ import { theme } from "./Theme.ts";
 import { Colours } from "./utils/Constants";
 import Typography from "@material-ui/core/Typography";
 import MobileStepper from "@material-ui/core/MobileStepper";
-import { ScoringInfoPanel } from "./ScoringInfoPanel";
+import { ScoringInfoPage } from "./ScoringInfoPage";
 import { ProductBarInfoPage } from "./ProductBarInfoPage";
 import { CatalogueInfoPage } from "./CatalogueInfoPage";
 import { FinishPage } from "./FinishPage";
@@ -111,7 +111,7 @@ function App() {
         <TopCorner className={classes.topRightImg} />
         <Box className={classes.page}>
           <Box className={classes.contentContainer}>
-            {activeStep === 0 && <ScoringInfoPanel />}
+            {activeStep === 0 && <ScoringInfoPage />}
             {activeStep === 1 && <ProductBarInfoPage />}
             {activeStep === 2 && <CatalogueInfoPage />}
             {activeStep === 3 && <FinishPage />}
