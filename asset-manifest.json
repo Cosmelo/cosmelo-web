@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/cosmelo-web/static/js/main.505de2b5.chunk.js",
-    "main.js.map": "/cosmelo-web/static/js/main.505de2b5.chunk.js.map",
-    "runtime-main.js": "/cosmelo-web/static/js/runtime-main.b9bb9448.js",
-    "runtime-main.js.map": "/cosmelo-web/static/js/runtime-main.b9bb9448.js.map",
-    "static/js/2.2c554c16.chunk.js": "/cosmelo-web/static/js/2.2c554c16.chunk.js",
-    "static/js/2.2c554c16.chunk.js.map": "/cosmelo-web/static/js/2.2c554c16.chunk.js.map",
-    "static/js/3.20b3cec2.chunk.js": "/cosmelo-web/static/js/3.20b3cec2.chunk.js",
-    "static/js/3.20b3cec2.chunk.js.map": "/cosmelo-web/static/js/3.20b3cec2.chunk.js.map",
+    "main.js": "/cosmelo-web/static/js/main.14ce258a.chunk.js",
+    "main.js.map": "/cosmelo-web/static/js/main.14ce258a.chunk.js.map",
+    "runtime-main.js": "/cosmelo-web/static/js/runtime-main.ac4b6e68.js",
+    "runtime-main.js.map": "/cosmelo-web/static/js/runtime-main.ac4b6e68.js.map",
+    "static/js/2.477bdf23.chunk.js": "/cosmelo-web/static/js/2.477bdf23.chunk.js",
+    "static/js/2.477bdf23.chunk.js.map": "/cosmelo-web/static/js/2.477bdf23.chunk.js.map",
+    "static/js/3.70f1cea3.chunk.js": "/cosmelo-web/static/js/3.70f1cea3.chunk.js",
+    "static/js/3.70f1cea3.chunk.js.map": "/cosmelo-web/static/js/3.70f1cea3.chunk.js.map",
     "index.html": "/cosmelo-web/index.html",
-    "static/js/2.2c554c16.chunk.js.LICENSE.txt": "/cosmelo-web/static/js/2.2c554c16.chunk.js.LICENSE.txt",
+    "static/js/2.477bdf23.chunk.js.LICENSE.txt": "/cosmelo-web/static/js/2.477bdf23.chunk.js.LICENSE.txt",
     "static/media/arrow.0217964d.svg": "/cosmelo-web/static/media/arrow.0217964d.svg",
     "static/media/bottom-corner.c7c04446.svg": "/cosmelo-web/static/media/bottom-corner.c7c04446.svg",
     "static/media/img1.cbebe887.svg": "/cosmelo-web/static/media/img1.cbebe887.svg",
@@ -19,8 +19,8 @@
     "static/media/top-corner.5a217fec.svg": "/cosmelo-web/static/media/top-corner.5a217fec.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b9bb9448.js",
-    "static/js/2.2c554c16.chunk.js",
-    "static/js/main.505de2b5.chunk.js"
+    "static/js/runtime-main.ac4b6e68.js",
+    "static/js/2.477bdf23.chunk.js",
+    "static/js/main.14ce258a.chunk.js"
   ]
 }
