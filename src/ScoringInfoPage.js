@@ -11,7 +11,7 @@ export const ScoringInfoPage = () => {
         We score products based on 5 measures of sustainability
       </Typography>
       <Box margin="15px">
-        <Typography>Select a category to see how it's scored</Typography>
+        <Typography>Select a category to see how it's scored.</Typography>
       </Box>
       <ScoringInfoPanel />
     </>
