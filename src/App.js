@@ -9,31 +9,39 @@ import { ScoringInfoPanel } from "./ScoringInfoPanel";
 import { ProductBarInfoPage } from "./ProductBarInfoPage";
 import { CatalogueInfoPage } from "./CatalogueInfoPage";
 import { FinishPage } from "./FinishPage";
+import { ReactComponent as TopCorner } from "./img/top-corner.svg";
+import { ReactComponent as BottomCorner } from "./img/bottom-corner.svg";
 
 const useStyles = makeStyles((theme) => ({
-  app: {
+  page: {
     display: "flex",
     flexDirection: "column",
     margin: "auto",
     alignItems: "center",
-    justifyContent: "center",
   },
   navContainer: {
-    position: "absolute",
-    bottom: 200,
-    justifyContent: "center",
-    alignItems: "center",
+    position: "fixed",
+    bottom: "150px",
   },
-  navButtons: {
-    display: "flex",
-    flexDirection: "row",
+  backButton: {
+    display: "inline-block",
     margin: "auto",
+    float: "left",
+  },
+  centred: {
+    display: "flex",
+    flexDirection: "column",
+  },
+  nextButton: {
+    "&:hover": { backgroundColor: Colours.Skobeloff, color: Colours.White },
+    display: "flex",
+    margin: "auto",
+    backgroundColor: Colours.NaplesYellow,
+    width: "148px",
   },
   skipButton: {
-    position: "absolute",
-    bottom: 20,
-    justifyContent: "center",
-    alignItems: "center",
+    position: "fixed",
+    bottom: "10px",
   },
   stepper: {
     background: "white",
@@ -44,6 +52,28 @@ const useStyles = makeStyles((theme) => ({
   },
   stepperDotActive: {
     background: Colours.Skobeloff,
+  },
+  topRightImg: {
+    zIndex: "-1",
+    position: "absolute",
+    top: "0px",
+    right: "0px",
+    overflow: "visible",
+  },
+  bottomLeftImg: {
+    zIndex: "-1",
+    position: "absolute",
+    bottom: "0px",
+    left: "0px",
+    overflow: "visible",
+  },
+  contentContainer: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    margin: "20px",
+    padding: "50px",
   },
 }));
 
@@ -68,42 +98,53 @@ function App() {
   };
 
   return (
-    <div className={classes.app}>
-      {activeStep === 0 && <ScoringInfoPanel />}
-      {activeStep === 1 && <ProductBarInfoPage />}
-      {activeStep === 2 && <CatalogueInfoPage />}
-      {activeStep === 3 && <FinishPage />}
+    <div>
       <ThemeProvider theme={theme}>
-        <Box className={classes.navContainer}>
-          <Box className={classes.navButtons}>
-            <Button onClick={handleBack} disabled={activeStep === 0}>
-              <Typography variant="button">
-                {activeStep === 0 ? "" : "back"}
-              </Typography>
-            </Button>
-            <Button
-              variant="contained"
-              onClick={activeStep === 3 ? handleFinish : handleNext}
-            >
-              <Typography variant="button">
-                {activeStep === 3 ? "finish" : "next"}
-              </Typography>
-            </Button>
+        <TopCorner className={classes.topRightImg} />
+        <Box className={classes.page}>
+          <Box className={classes.contentContainer}>
+            {activeStep === 0 && <ScoringInfoPanel />}
+            {activeStep === 1 && <ProductBarInfoPage />}
+            {activeStep === 2 && <CatalogueInfoPage />}
+            {activeStep === 3 && <FinishPage />}
           </Box>
-          <MobileStepper
-            variant="dots"
-            steps={4}
-            position="static"
-            activeStep={activeStep}
-            classes={{
-              root: classes.stepper,
-              dotActive: classes.stepperDotActive,
-            }}
-          />
+          <Box className={classes.navContainer}>
+            <Box className={classes.backButton}>
+              <Button onClick={handleBack} disabled={activeStep === 0}>
+                <Typography variant="button">
+                  {activeStep === 0 ? "" : "back"}
+                </Typography>
+              </Button>
+            </Box>
+            <Box className={classes.centred}>
+              <Box>
+                <Button
+                  variant="contained"
+                  className={classes.nextButton}
+                  onClick={activeStep === 3 ? handleFinish : handleNext}
+                >
+                  <Typography variant="button">
+                    {activeStep === 3 ? "finish" : "next"}
+                  </Typography>
+                </Button>
+              </Box>
+              <MobileStepper
+                variant="dots"
+                steps={4}
+                position="static"
+                activeStep={activeStep}
+                classes={{
+                  root: classes.stepper,
+                  dotActive: classes.stepperDotActive,
+                }}
+              />
+            </Box>
+          </Box>
+          <Button onClick={handleSkip} className={classes.skipButton}>
+            <Typography variant="caption">Skip tutorial</Typography>
+          </Button>
         </Box>
-        <Button onClick={handleSkip} className={classes.skipButton}>
-          <Typography variant="caption">Skip tutorial</Typography>
-        </Button>
+        <BottomCorner className={classes.bottomLeftImg} />
       </ThemeProvider>
     </div>
   );

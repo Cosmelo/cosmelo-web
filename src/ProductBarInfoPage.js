@@ -1,14 +1,13 @@
 import { makeStyles, Box, Tooltip } from "@material-ui/core";
 import { ThemeProvider, withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-
 import React from "react";
-
 import { calculateScore, categories, orderedCategories } from "./utils/helper";
 import { randomInfo } from "./utils/data";
 import { Colours } from "./utils/Constants";
 import { theme } from "./Theme";
 import GoodIcon from "./GoodIcon";
+import { ReactComponent as Arrow } from "./img/arrow.svg";
 
 const useStyles = makeStyles({
   circle: {
@@ -22,11 +21,10 @@ const useStyles = makeStyles({
   bar: {
     display: "flex",
     flexDirection: "row",
-    height: "32px",
-    width: "300px",
+    height: "64px",
+    width: "570px",
     position: "relative",
-    borderRadius: "0 16px 16px 0",
-    marginLeft: "5px",
+    borderRadius: "0 32px 32px 0",
     overflow: "hidden",
   },
   barInner: {
@@ -44,6 +42,7 @@ const NiceTooltip = withStyles({
     padding: "5px",
     display: "flex",
     alignItems: "center",
+    maxWidth: "1000px",
   },
   arrow: {
     color: "#F5F5F5",
@@ -66,36 +65,61 @@ export const ProductBarInfoPage = () => {
       <Typography variant="h5">
         Each category adds points to an overall product score
       </Typography>
-      <Box display="flex" flexDirection="row" padding="4px 0 4px 0">
-        <GoodIcon style={{ fontSize: "32px" }} />
+      <Box display="flex" flexDirection="row" padding="60px">
         <Box
-          className={classes.bar}
-          border={`2px solid ${colour}`}
-          width="300px"
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
         >
-          {orderedCategories.map((category) => (
-            <NiceTooltip
-              title={
-                <>
-                  {randomInfo[category].score}
-                  <Box className={classes.circle} />
-                  {categories[category].label}
-                </>
-              }
-              arrow
-              key={"tooltip" + categories[category].label}
-              placement="top"
-            >
-              <Box
-                className={classes.barInner}
-                key={categories[category].label}
-                style={{
-                  background: categories[category].colour,
-                  width: `${(randomInfo[category].score / 15) * 297}px`,
-                }}
-              />
-            </NiceTooltip>
-          ))}
+          <Box margin="20px 0 20px 0">
+            <GoodIcon style={{ fontSize: "64px" }} />
+          </Box>
+          <Box padding="10px">
+            <Arrow />
+          </Box>
+          <Typography>overall score</Typography>
+        </Box>
+        <Box
+          display="flex"
+          flexDirection="column"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <Box
+            className={classes.bar}
+            border={`4px solid ${colour}`}
+            width="300px"
+            margin="20px 0 20px 10px"
+          >
+            {orderedCategories.map((category) => (
+              <NiceTooltip
+                title={
+                  <>
+                    {randomInfo[category].score}
+                    <Box className={classes.circle} />
+                    {categories[category].label}
+                  </>
+                }
+                arrow
+                key={"tooltip" + categories[category].label}
+                placement="top"
+              >
+                <Box
+                  className={classes.barInner}
+                  key={categories[category].label}
+                  style={{
+                    background: categories[category].colour,
+                    width: `${(randomInfo[category].score / 15) * 567}px`,
+                  }}
+                />
+              </NiceTooltip>
+            ))}
+          </Box>
+          <Box padding="10px">
+            <Arrow />
+          </Box>
+          <Typography>category breakdown</Typography>
         </Box>
       </Box>
       <Typography>
