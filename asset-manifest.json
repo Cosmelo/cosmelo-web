@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/cosmelo-web/static/js/main.c64eb900.chunk.js",
-    "main.js.map": "/cosmelo-web/static/js/main.c64eb900.chunk.js.map",
+    "main.js": "/cosmelo-web/static/js/main.fee864d9.chunk.js",
+    "main.js.map": "/cosmelo-web/static/js/main.fee864d9.chunk.js.map",
     "runtime-main.js": "/cosmelo-web/static/js/runtime-main.ac4b6e68.js",
     "runtime-main.js.map": "/cosmelo-web/static/js/runtime-main.ac4b6e68.js.map",
     "static/js/2.477bdf23.chunk.js": "/cosmelo-web/static/js/2.477bdf23.chunk.js",
@@ -11,7 +11,7 @@
     "index.html": "/cosmelo-web/index.html",
     "static/js/2.477bdf23.chunk.js.LICENSE.txt": "/cosmelo-web/static/js/2.477bdf23.chunk.js.LICENSE.txt",
     "static/media/arrow.0217964d.svg": "/cosmelo-web/static/media/arrow.0217964d.svg",
-    "static/media/bottom-corner.c7c04446.svg": "/cosmelo-web/static/media/bottom-corner.c7c04446.svg",
+    "static/media/bottom-corner.faf8fa3d.svg": "/cosmelo-web/static/media/bottom-corner.faf8fa3d.svg",
     "static/media/img1.cbebe887.svg": "/cosmelo-web/static/media/img1.cbebe887.svg",
     "static/media/img2.80d1e09f.svg": "/cosmelo-web/static/media/img2.80d1e09f.svg",
     "static/media/img3.8bc3bc61.svg": "/cosmelo-web/static/media/img3.8bc3bc61.svg",
@@ -21,6 +21,6 @@
   "entrypoints": [
     "static/js/runtime-main.ac4b6e68.js",
     "static/js/2.477bdf23.chunk.js",
-    "static/js/main.c64eb900.chunk.js"
+    "static/js/main.fee864d9.chunk.js"
   ]
 }
