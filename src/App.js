@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
   },
   nextButton: {
-    "&:hover": { backgroundColor: Colours.Skobeloff, color: Colours.White },
+    "&:hover": { backgroundColor: Colours.Grey, color: Colours.Black },
     display: "flex",
     margin: "auto",
     backgroundColor: Colours.NaplesYellow,
