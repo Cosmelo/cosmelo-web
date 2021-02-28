@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/cosmelo-web/static/js/main.fee864d9.chunk.js",
-    "main.js.map": "/cosmelo-web/static/js/main.fee864d9.chunk.js.map",
+    "main.js": "/cosmelo-web/static/js/main.2ddc5ab4.chunk.js",
+    "main.js.map": "/cosmelo-web/static/js/main.2ddc5ab4.chunk.js.map",
     "runtime-main.js": "/cosmelo-web/static/js/runtime-main.ac4b6e68.js",
     "runtime-main.js.map": "/cosmelo-web/static/js/runtime-main.ac4b6e68.js.map",
     "static/js/2.477bdf23.chunk.js": "/cosmelo-web/static/js/2.477bdf23.chunk.js",
@@ -10,17 +10,17 @@
     "static/js/3.70f1cea3.chunk.js.map": "/cosmelo-web/static/js/3.70f1cea3.chunk.js.map",
     "index.html": "/cosmelo-web/index.html",
     "static/js/2.477bdf23.chunk.js.LICENSE.txt": "/cosmelo-web/static/js/2.477bdf23.chunk.js.LICENSE.txt",
-    "static/media/arrow.0217964d.svg": "/cosmelo-web/static/media/arrow.0217964d.svg",
-    "static/media/bottom-corner.faf8fa3d.svg": "/cosmelo-web/static/media/bottom-corner.faf8fa3d.svg",
-    "static/media/img1.cbebe887.svg": "/cosmelo-web/static/media/img1.cbebe887.svg",
-    "static/media/img2.80d1e09f.svg": "/cosmelo-web/static/media/img2.80d1e09f.svg",
-    "static/media/img3.8bc3bc61.svg": "/cosmelo-web/static/media/img3.8bc3bc61.svg",
-    "static/media/product-page.951427cf.svg": "/cosmelo-web/static/media/product-page.951427cf.svg",
-    "static/media/top-corner.5a217fec.svg": "/cosmelo-web/static/media/top-corner.5a217fec.svg"
+    "static/media/arrow.0c78c3f1.svg": "/cosmelo-web/static/media/arrow.0c78c3f1.svg",
+    "static/media/bottom-corner.9598de88.svg": "/cosmelo-web/static/media/bottom-corner.9598de88.svg",
+    "static/media/img1.e2bff4ae.svg": "/cosmelo-web/static/media/img1.e2bff4ae.svg",
+    "static/media/img2.b1ec8571.svg": "/cosmelo-web/static/media/img2.b1ec8571.svg",
+    "static/media/img3.f0337075.svg": "/cosmelo-web/static/media/img3.f0337075.svg",
+    "static/media/product-page.a669d43f.svg": "/cosmelo-web/static/media/product-page.a669d43f.svg",
+    "static/media/top-corner.e70863d6.svg": "/cosmelo-web/static/media/top-corner.e70863d6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ac4b6e68.js",
     "static/js/2.477bdf23.chunk.js",
-    "static/js/main.fee864d9.chunk.js"
+    "static/js/main.2ddc5ab4.chunk.js"
   ]
 }
