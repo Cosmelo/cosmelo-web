@@ -1,16 +1,16 @@
 import React from "react";
 import { makeStyles, ThemeProvider } from "@material-ui/core/styles";
 import { Box, Button } from "@material-ui/core";
-import { theme } from "./Theme.ts";
+import { theme } from "./styles/theme.ts";
 import { Colours } from "./utils/Constants";
 import Typography from "@material-ui/core/Typography";
 import MobileStepper from "@material-ui/core/MobileStepper";
-import { ScoringInfoPage } from "./ScoringInfoPage";
-import { ProductBarInfoPage } from "./ProductBarInfoPage";
-import { CatalogueInfoPage } from "./CatalogueInfoPage";
-import { FinishPage } from "./FinishPage";
-import { ReactComponent as TopCorner } from "./img/top-corner.svg";
-import { ReactComponent as BottomCorner } from "./img/bottom-corner.svg";
+import { ScoringInfoPage } from "./components/ScoringInfoPage";
+import { ProductBarInfoPage } from "./components/ProductBarInfoPage";
+import { CatalogueInfoPage } from "./components/CatalogueInfoPage";
+import { FinishPage } from "./components/FinishPage";
+import { ReactComponent as TopCorner } from "./assets/top-corner.svg";
+import { ReactComponent as BottomCorner } from "./assets/bottom-corner.svg";
 
 const useStyles = makeStyles((theme) => ({
   page: {

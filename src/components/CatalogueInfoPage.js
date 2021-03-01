@@ -2,9 +2,9 @@ import React from "react";
 import { Box } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import { ReactComponent as Img1 } from "./img/img1.svg";
-import { ReactComponent as Img2 } from "./img/img2.svg";
-import { ReactComponent as Img3 } from "./img/img3.svg";
+import { ReactComponent as GoodExample } from "../assets/good-example.svg";
+import { ReactComponent as OkayExample } from "../assets/okay-example.svg";
+import { ReactComponent as BadExample } from "../assets/bad-example.svg";
 
 const useStyles = makeStyles((theme) => ({
   imgContainer: {
@@ -32,9 +32,9 @@ export const CatalogueInfoPage = () => {
         </Typography>
       </Box>
       <Box className={classes.imgContainer}>
-        <Img1 className={classes.img} />
-        <Img2 className={classes.img} />
-        <Img3 className={classes.img} />
+        <GoodExample className={classes.img} />
+        <OkayExample className={classes.img} />
+        <BadExample className={classes.img} />
       </Box>
     </>
   );

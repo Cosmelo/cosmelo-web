@@ -2,11 +2,11 @@ import React from "react";
 import { makeStyles, Box, Tooltip } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import { calculateScore, categories, orderedCategories } from "./utils/helper";
-import { randomInfo } from "./utils/data";
-import { Colours } from "./utils/Constants";
+import { calculateScore, categories, orderedCategories } from "../utils/helper";
+import { randomInfo } from "../utils/data";
+import { Colours } from "../utils/Constants";
 import GoodIcon from "./GoodIcon";
-import { ReactComponent as Arrow } from "./img/arrow.svg";
+import { ReactComponent as Arrow } from "../assets/arrow.svg";
 
 const useStyles = makeStyles({
   circle: {
