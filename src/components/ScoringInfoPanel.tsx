@@ -5,7 +5,7 @@ import {
   categories,
   orderedCategories,
   scoringByCategory,
-} from "./utils/helper";
+} from "../utils/helper";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   Box,
@@ -16,7 +16,7 @@ import {
   TableRow,
   Typography,
 } from "@material-ui/core";
-import { Colours } from "./utils/Constants";
+import { Colours } from "../utils/Constants";
 
 const useOptionStyles = makeStyles({
   wrapper: {

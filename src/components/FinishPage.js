@@ -1,6 +1,6 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
-import { ReactComponent as ProductPageSvg } from "./img/product-page.svg";
+import { ReactComponent as ProductPageSvg } from "../assets/product-page.svg";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
