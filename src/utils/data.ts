@@ -9,10 +9,6 @@ export const randomInfo: ProductInfo = {
     score: 2,
     details: [],
   },
-  humanHealth: {
-    score: 3,
-    details: [],
-  },
   supplyChainAndEnvironment: {
     score: 3,
     details: [],
@@ -35,13 +31,6 @@ export const squalaneCleanserInfo: ProductInfo = {
     score: 3,
     details: [
       " Deciem does not test on animals and only sells to customers in China through cross-border operations",
-    ],
-  },
-  humanHealth: {
-    score: 2,
-    details: [
-      "All Deciem formulations are made by in-house team of bio-chemists and material-chemists in their own labs",
-      "All Deciem products undergo thorough safety assessment before hitting the market. Each ingredient is reviewed against current scientific literature and strict global regulations",
     ],
   },
   supplyChainAndEnvironment: {
@@ -71,13 +60,6 @@ export const soyMakeupRemovingFaceWashInfo: ProductInfo = {
     score: 3,
     details: ["Fresh is against and does not use animal testing"],
   },
-  humanHealth: {
-    score: 2,
-    details: [
-      "This product contains Rosa Damascena Flower Oil which is expensive to extract and is required in large amounts, also contains fragrant components that might irritate sensitive skin",
-      "This product used Ascorbyl Palmitate (AP), which is a not so stable vitamin C derivative. AP can promote lipid peroxidation and cytotoxicity",
-    ],
-  },
   supplyChainAndEnvironment: {
     score: 2,
     details: [
@@ -103,12 +85,6 @@ export const superfoodAntioxidantCleanserInfo: ProductInfo = {
   disclosure: {
     score: 3,
     details: ["Never, the company’s line is 100% vegan and cruelty free"],
-  },
-  humanHealth: {
-    score: 2,
-    details: [
-      "All ingredients in this product are biodegradable and abide by EU’s list of 1300+ ingredients that are restricted for cosmetic use",
-    ],
   },
   supplyChainAndEnvironment: {
     score: 0,
