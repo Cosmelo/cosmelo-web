@@ -2,9 +2,8 @@ import { Colours } from "./Constants";
 
 export enum ScoreCategories {
   Packaging = "packaging",
-  Disclosure = "disclosure",
-  HumanHealth = "humanHealth",
-  SupplyChainAndEnvironment = "supplyChainAndEnvironment",
+  AnimalTesting = "animalTesting",
+  ManufacturingEmissions = "manufacturingEmissions",
   Ethics = "ethics",
 }
 
@@ -15,9 +14,8 @@ export interface CategoryInfo {
 
 export interface ProductInfo {
   packaging: CategoryInfo;
-  disclosure: CategoryInfo;
-  humanHealth: CategoryInfo;
-  supplyChainAndEnvironment: CategoryInfo;
+  animalTesting: CategoryInfo;
+  manufacturingEmissions: CategoryInfo;
   ethics: CategoryInfo;
 }
 
@@ -26,13 +24,9 @@ export const categories = {
     label: "Packaging Recyclability",
     colour: Colours.Skobeloff,
   },
-  disclosure: { label: "Animal Testing", colour: Colours.SkyBlueCrayola },
-  humanHealth: {
-    label: "Human Health",
-    colour: Colours.NaplesYellow,
-  },
-  supplyChainAndEnvironment: {
-    label: "Manufacturing greenhouse gas emissions",
+  animalTesting: { label: "Animal Testing", colour: Colours.SkyBlueCrayola },
+  manufacturingEmissions: {
+    label: "Manufacturing Emissions",
     colour: Colours.Coral,
   },
   ethics: {
@@ -43,9 +37,8 @@ export const categories = {
 
 export const orderedCategories: Array<keyof ProductInfo> = [
   ScoreCategories.Packaging,
-  ScoreCategories.Disclosure,
-  ScoreCategories.HumanHealth,
-  ScoreCategories.SupplyChainAndEnvironment,
+  ScoreCategories.AnimalTesting,
+  ScoreCategories.ManufacturingEmissions,
   ScoreCategories.Ethics,
 ];
 
@@ -56,19 +49,13 @@ export const scoringByCategory = {
     1: "This product’s packaging is only recyclable via drop-off, mail-in, and/or takeback",
     0: "This product’s packaging is not recyclable in the form sold to consumers, or cannot be determined",
   },
-  [ScoreCategories.Disclosure]: {
+  [ScoreCategories.AnimalTesting]: {
     3: "The company does not use animal testing on any of its products",
     2: "This product is not tested on animals, but the company participates in animal testing",
     1: "The company participates in animal testing, but is actively looking for alternatives",
     0: "The company performs animal testing on ingredients/products to justify safety",
   },
-  [ScoreCategories.HumanHealth]: {
-    3: "The company participates in ongoing research to improve product safety in ingredients and risk assessment",
-    2: "The company discloses risk and safety information on our websites including full risk assessment of ingredients, risk assessment methodologies, and postmarket safety surveillance strategy/results",
-    1: "The company does not address product safety beyond legal and regulatory compliance",
-    0: "The product includes ingredients that are present in Cosmetic Ingredients Hotlist beyond a regulated amount",
-  },
-  [ScoreCategories.SupplyChainAndEnvironment]: {
+  [ScoreCategories.ManufacturingEmissions]: {
     3: "Process of production for the product is carbon neutral",
     2: "The company sets, tracks, and discloses goals and results to reduce greenhouse gas emissions",
     1: "The company publicly discloses greenhouse gas emissions",

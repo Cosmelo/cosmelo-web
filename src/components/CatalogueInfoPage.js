@@ -5,6 +5,7 @@ import Typography from "@material-ui/core/Typography";
 import { ReactComponent as GoodExample } from "../assets/good-example.svg";
 import { ReactComponent as OkayExample } from "../assets/okay-example.svg";
 import { ReactComponent as BadExample } from "../assets/bad-example.svg";
+import { ReactComponent as UnsureExample } from "../assets/unsure-example.svg";
 
 const useStyles = makeStyles((theme) => ({
   imgContainer: {
@@ -35,6 +36,7 @@ export const CatalogueInfoPage = () => {
         <GoodExample className={classes.img} />
         <OkayExample className={classes.img} />
         <BadExample className={classes.img} />
+        <UnsureExample className={classes.img} />
       </Box>
     </>
   );

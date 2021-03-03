@@ -52,7 +52,7 @@ export const ProductBarInfoPage = () => {
   const classes = useStyles();
   const score = calculateScore(randomInfo);
   let colour;
-  if (score >= 10) {
+  if (score >= 9) {
     colour = Colours.Success;
   } else if (score >= 5) {
     colour = Colours.Warning;
@@ -109,7 +109,7 @@ export const ProductBarInfoPage = () => {
                   key={categories[category].label}
                   style={{
                     background: categories[category].colour,
-                    width: `${(randomInfo[category].score / 15) * 567}px`,
+                    width: `${(randomInfo[category].score / 12) * 567}px`,
                   }}
                 />
               </NiceTooltip>
@@ -122,8 +122,8 @@ export const ProductBarInfoPage = () => {
         </Box>
       </Box>
       <Typography>
-        Each category is scored out of 3 points. There are 5 categories,
-        amounting to a score out of 15 (3 points x 5 categories) for each
+        Each category is scored out of 3 points. There are 4 categories,
+        amounting to a score out of 12 (3 points x 4 categories) for each
         product.
       </Typography>
     </>
