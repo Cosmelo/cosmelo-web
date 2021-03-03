@@ -26,7 +26,7 @@ export const categories = {
   },
   animalTesting: { label: "Animal Testing", colour: Colours.SkyBlueCrayola },
   manufacturingEmissions: {
-    label: "Manufacturing greenhouse gas emissions",
+    label: "Manufacturing Emissions",
     colour: Colours.Coral,
   },
   ethics: {
