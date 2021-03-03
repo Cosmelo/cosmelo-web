@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/cosmelo-web/static/js/main.0a550edc.chunk.js",
-    "main.js.map": "/cosmelo-web/static/js/main.0a550edc.chunk.js.map",
+    "main.js": "/cosmelo-web/static/js/main.bc194e6b.chunk.js",
+    "main.js.map": "/cosmelo-web/static/js/main.bc194e6b.chunk.js.map",
     "runtime-main.js": "/cosmelo-web/static/js/runtime-main.ac4b6e68.js",
     "runtime-main.js.map": "/cosmelo-web/static/js/runtime-main.ac4b6e68.js.map",
     "static/js/2.435990cd.chunk.js": "/cosmelo-web/static/js/2.435990cd.chunk.js",
@@ -10,18 +10,18 @@
     "static/js/3.70f1cea3.chunk.js.map": "/cosmelo-web/static/js/3.70f1cea3.chunk.js.map",
     "index.html": "/cosmelo-web/index.html",
     "static/js/2.435990cd.chunk.js.LICENSE.txt": "/cosmelo-web/static/js/2.435990cd.chunk.js.LICENSE.txt",
-    "static/media/arrow.0c78c3f1.svg": "/cosmelo-web/static/media/arrow.0c78c3f1.svg",
-    "static/media/bad-example.f0337075.svg": "/cosmelo-web/static/media/bad-example.f0337075.svg",
-    "static/media/bottom-corner.9598de88.svg": "/cosmelo-web/static/media/bottom-corner.9598de88.svg",
-    "static/media/good-example.e2bff4ae.svg": "/cosmelo-web/static/media/good-example.e2bff4ae.svg",
-    "static/media/okay-example.b1ec8571.svg": "/cosmelo-web/static/media/okay-example.b1ec8571.svg",
-    "static/media/product-page.322c0e23.svg": "/cosmelo-web/static/media/product-page.322c0e23.svg",
-    "static/media/top-corner.e70863d6.svg": "/cosmelo-web/static/media/top-corner.e70863d6.svg",
-    "static/media/unsure-example.8b096ba7.svg": "/cosmelo-web/static/media/unsure-example.8b096ba7.svg"
+    "static/media/arrow.0217964d.svg": "/cosmelo-web/static/media/arrow.0217964d.svg",
+    "static/media/bad-example.8bc3bc61.svg": "/cosmelo-web/static/media/bad-example.8bc3bc61.svg",
+    "static/media/bottom-corner.faf8fa3d.svg": "/cosmelo-web/static/media/bottom-corner.faf8fa3d.svg",
+    "static/media/good-example.cbebe887.svg": "/cosmelo-web/static/media/good-example.cbebe887.svg",
+    "static/media/okay-example.80d1e09f.svg": "/cosmelo-web/static/media/okay-example.80d1e09f.svg",
+    "static/media/product-page.4e00c048.svg": "/cosmelo-web/static/media/product-page.4e00c048.svg",
+    "static/media/top-corner.5a217fec.svg": "/cosmelo-web/static/media/top-corner.5a217fec.svg",
+    "static/media/unsure-example.a4ed15b4.svg": "/cosmelo-web/static/media/unsure-example.a4ed15b4.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ac4b6e68.js",
     "static/js/2.435990cd.chunk.js",
-    "static/js/main.0a550edc.chunk.js"
+    "static/js/main.bc194e6b.chunk.js"
   ]
 }
