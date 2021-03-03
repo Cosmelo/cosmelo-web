@@ -5,11 +5,11 @@ export const randomInfo: ProductInfo = {
     score: 2,
     details: [],
   },
-  disclosure: {
+  animalTesting: {
     score: 2,
     details: [],
   },
-  supplyChainAndEnvironment: {
+  manufacturingEmissions: {
     score: 3,
     details: [],
   },
@@ -27,13 +27,13 @@ export const squalaneCleanserInfo: ProductInfo = {
       "Deciem accepts all post-use skincare and cosmetics packaging that typically don’t have a home in most curbside recycling programs",
     ],
   },
-  disclosure: {
+  animalTesting: {
     score: 3,
     details: [
       " Deciem does not test on animals and only sells to customers in China through cross-border operations",
     ],
   },
-  supplyChainAndEnvironment: {
+  manufacturingEmissions: {
     score: 3,
     details: [
       "Carbon neutral unit boxes",
@@ -56,11 +56,11 @@ export const soyMakeupRemovingFaceWashInfo: ProductInfo = {
       "Fresh blue gift boxes and bags are 100% plastic-free because of removed lamination",
     ],
   },
-  disclosure: {
+  animalTesting: {
     score: 3,
     details: ["Fresh is against and does not use animal testing"],
   },
-  supplyChainAndEnvironment: {
+  manufacturingEmissions: {
     score: 2,
     details: [
       "Fresh’s main manufacturing facilities are powered by renewable energy and are ISO 14001 certified",
@@ -82,11 +82,11 @@ export const superfoodAntioxidantCleanserInfo: ProductInfo = {
       "YTTP manufactures locally and use paper from responsible sources",
     ],
   },
-  disclosure: {
+  animalTesting: {
     score: 3,
     details: ["Never, the company’s line is 100% vegan and cruelty free"],
   },
-  supplyChainAndEnvironment: {
+  manufacturingEmissions: {
     score: 0,
     details: ["No mention on website"],
   },

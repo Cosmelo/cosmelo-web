@@ -52,9 +52,9 @@ export const ProductBarInfoPage = () => {
   const classes = useStyles();
   const score = calculateScore(randomInfo);
   let colour;
-  if (score >= 8) {
+  if (score >= 9) {
     colour = Colours.Success;
-  } else if (score >= 4) {
+  } else if (score >= 5) {
     colour = Colours.Warning;
   } else {
     colour = Colours.Error;
