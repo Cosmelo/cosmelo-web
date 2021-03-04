@@ -30,7 +30,7 @@ export const categories = {
     colour: Colours.Coral,
   },
   ethics: {
-    label: "Human rights/Ethical labor",
+    label: "Human rights & Ethical labour",
     colour: Colours.CaribbeanGreen,
   },
 };

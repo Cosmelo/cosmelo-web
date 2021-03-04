@@ -25,7 +25,7 @@ export const CatalogueInfoPage = () => {
   return (
     <>
       <Typography variant="h5">
-        Each product is assigned GOOD, OKAY, or BAD
+        Each product is assigned GOOD, OKAY, BAD, or UNKNOWN
       </Typography>
       <Box margin="15px">
         <Typography>
