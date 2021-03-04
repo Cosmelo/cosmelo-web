@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.js": "/cosmelo-web/static/js/main.27de7951.chunk.js",
-    "main.js.map": "/cosmelo-web/static/js/main.27de7951.chunk.js.map",
-    "runtime-main.js": "/cosmelo-web/static/js/runtime-main.ac4b6e68.js",
-    "runtime-main.js.map": "/cosmelo-web/static/js/runtime-main.ac4b6e68.js.map",
-    "static/js/2.435990cd.chunk.js": "/cosmelo-web/static/js/2.435990cd.chunk.js",
-    "static/js/2.435990cd.chunk.js.map": "/cosmelo-web/static/js/2.435990cd.chunk.js.map",
-    "static/js/3.70f1cea3.chunk.js": "/cosmelo-web/static/js/3.70f1cea3.chunk.js",
-    "static/js/3.70f1cea3.chunk.js.map": "/cosmelo-web/static/js/3.70f1cea3.chunk.js.map",
-    "index.html": "/cosmelo-web/index.html",
-    "static/js/2.435990cd.chunk.js.LICENSE.txt": "/cosmelo-web/static/js/2.435990cd.chunk.js.LICENSE.txt",
-    "static/media/arrow.0217964d.svg": "/cosmelo-web/static/media/arrow.0217964d.svg",
-    "static/media/bad-example.8bc3bc61.svg": "/cosmelo-web/static/media/bad-example.8bc3bc61.svg",
-    "static/media/bottom-corner.faf8fa3d.svg": "/cosmelo-web/static/media/bottom-corner.faf8fa3d.svg",
-    "static/media/good-example.cbebe887.svg": "/cosmelo-web/static/media/good-example.cbebe887.svg",
-    "static/media/okay-example.80d1e09f.svg": "/cosmelo-web/static/media/okay-example.80d1e09f.svg",
-    "static/media/product-page.4e00c048.svg": "/cosmelo-web/static/media/product-page.4e00c048.svg",
-    "static/media/top-corner.5a217fec.svg": "/cosmelo-web/static/media/top-corner.5a217fec.svg",
-    "static/media/unsure-example.8dc2cf8c.svg": "/cosmelo-web/static/media/unsure-example.8dc2cf8c.svg"
+    "main.js": "/static/js/main.e4b586e9.chunk.js",
+    "main.js.map": "/static/js/main.e4b586e9.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.21b2c49e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.21b2c49e.js.map",
+    "static/js/2.435990cd.chunk.js": "/static/js/2.435990cd.chunk.js",
+    "static/js/2.435990cd.chunk.js.map": "/static/js/2.435990cd.chunk.js.map",
+    "static/js/3.70f1cea3.chunk.js": "/static/js/3.70f1cea3.chunk.js",
+    "static/js/3.70f1cea3.chunk.js.map": "/static/js/3.70f1cea3.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.435990cd.chunk.js.LICENSE.txt": "/static/js/2.435990cd.chunk.js.LICENSE.txt",
+    "static/media/arrow.0c78c3f1.svg": "/static/media/arrow.0c78c3f1.svg",
+    "static/media/bad-example.f0337075.svg": "/static/media/bad-example.f0337075.svg",
+    "static/media/bottom-corner.9598de88.svg": "/static/media/bottom-corner.9598de88.svg",
+    "static/media/good-example.e2bff4ae.svg": "/static/media/good-example.e2bff4ae.svg",
+    "static/media/okay-example.b1ec8571.svg": "/static/media/okay-example.b1ec8571.svg",
+    "static/media/product-page.322c0e23.svg": "/static/media/product-page.322c0e23.svg",
+    "static/media/top-corner.e70863d6.svg": "/static/media/top-corner.e70863d6.svg",
+    "static/media/unsure-example.72b817ee.svg": "/static/media/unsure-example.72b817ee.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ac4b6e68.js",
+    "static/js/runtime-main.21b2c49e.js",
     "static/js/2.435990cd.chunk.js",
-    "static/js/main.27de7951.chunk.js"
+    "static/js/main.e4b586e9.chunk.js"
   ]
 }
