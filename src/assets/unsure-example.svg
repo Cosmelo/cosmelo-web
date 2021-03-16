@@ -3,9 +3,8 @@
 <rect y="226.638" width="84" height="3.27273" rx="1.09091" fill="black"/>
 <rect y="236.456" width="84" height="3.27273" rx="1.09091" fill="black"/>
 <circle cx="43.5" cy="177.502" r="16.98" fill="#78D3DE" stroke="#78D3DE" stroke-width="3.04003"/>
-<path d="M51.7031 184.202H53.2231V181.162H51.7031V184.202ZM49.3906 181.162H47.8706V184.202H49.3906V181.162ZM51.7031 181.162H49.3906V184.202H51.7031V181.162Z" fill="white"/>
-<path d="M37.8281 184.202H39.3481V181.162H37.8281V184.202ZM35.5156 181.162H33.9956V184.202H35.5156V181.162ZM37.8281 181.162H35.5156V184.202H37.8281V181.162Z" fill="white"/>
-<path d="M44.7656 184.202H46.2856V181.162H44.7656V184.202ZM42.4531 181.162H40.9331V184.202H42.4531V181.162ZM44.7656 181.162H42.4531V184.202H44.7656V181.162Z" fill="white"/>
+<circle cx="43.5175" cy="188.272" r="1.52047" fill="white"/>
+<path d="M43.5 184.439V178.658C46.1979 178.465 51.5938 178.658 51.5938 173.455C51.5938 167.096 45.8125 168.252 41.7656 168.252" stroke="white" stroke-width="3.04094"/>
 <path d="M32.015 135.985V90.6492H53.7899V135.985H32.015Z" stroke="black" stroke-width="4.03" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M36.5028 91.107V82.7955H50.424V91.107H36.5028Z" fill="#2AC49A" stroke="black" stroke-width="4.03" stroke-linecap="round" stroke-linejoin="round"/>
 <line x1="43.6925" y1="82.1314" x2="43.6925" y2="2.015" stroke="black" stroke-width="4.03" stroke-linecap="round" stroke-linejoin="round"/>
