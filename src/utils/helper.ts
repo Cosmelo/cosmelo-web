@@ -21,7 +21,7 @@ export interface ProductInfo {
 
 export const categories = {
   packaging: {
-    label: "Packaging Recyclability",
+    label: "Packaging Life Cycle",
     colour: Colours.Skobeloff,
   },
   animalTesting: { label: "Animal Testing", colour: Colours.SkyBlueCrayola },
@@ -45,13 +45,13 @@ export const orderedCategories: Array<keyof ProductInfo> = [
 export const scoringByCategory = {
   [ScoreCategories.Packaging]: {
     3: "The company has a refill or container return policy in the customer’s location",
-    2: "This product’s packaging is recyclable with separation",
-    1: "This product’s packaging is only recyclable via drop-off, mail-in, and/or takeback",
-    0: "This product’s packaging is not recyclable in the form sold to consumers, or cannot be determined",
+    2: "The company has packaging that is recyclable with separation",
+    1: "The company has packaging that is only recyclable via drop-off, mail-in, and/or takeback",
+    0: "The company has packaging that is not recyclable in the form sold to consumers, or cannot be determined",
   },
   [ScoreCategories.AnimalTesting]: {
     3: "The company does not use animal testing on any of its products",
-    2: "This product is not tested on animals, but the company participates in animal testing",
+    2: "The company only tests on animals when selling in regions where it is required by law",
     1: "The company participates in animal testing, but is actively looking for alternatives",
     0: "The company performs animal testing on ingredients/products to justify safety",
   },
