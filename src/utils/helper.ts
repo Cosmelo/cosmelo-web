@@ -51,7 +51,7 @@ export const scoringByCategory = {
   },
   [ScoreCategories.AnimalTesting]: {
     3: "The company does not use animal testing on any of its products",
-    2: "This product is not tested on animals, but the company participates in animal testing",
+    2: "The company only tests on animals when selling in regions where it is required by law",
     1: "The company participates in animal testing, but is actively looking for alternatives",
     0: "The company performs animal testing on ingredients/products to justify safety",
   },
