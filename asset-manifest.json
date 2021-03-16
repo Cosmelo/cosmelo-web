@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.js": "/static/js/main.048c00c6.chunk.js",
-    "main.js.map": "/static/js/main.048c00c6.chunk.js.map",
+    "main.js": "/static/js/main.27de7951.chunk.js",
+    "main.js.map": "/static/js/main.27de7951.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.21b2c49e.js",
     "runtime-main.js.map": "/static/js/runtime-main.21b2c49e.js.map",
-    "static/js/2.cb65f835.chunk.js": "/static/js/2.cb65f835.chunk.js",
-    "static/js/2.cb65f835.chunk.js.map": "/static/js/2.cb65f835.chunk.js.map",
+    "static/js/2.435990cd.chunk.js": "/static/js/2.435990cd.chunk.js",
+    "static/js/2.435990cd.chunk.js.map": "/static/js/2.435990cd.chunk.js.map",
     "static/js/3.70f1cea3.chunk.js": "/static/js/3.70f1cea3.chunk.js",
     "static/js/3.70f1cea3.chunk.js.map": "/static/js/3.70f1cea3.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.cb65f835.chunk.js.LICENSE.txt": "/static/js/2.cb65f835.chunk.js.LICENSE.txt",
+    "static/js/2.435990cd.chunk.js.LICENSE.txt": "/static/js/2.435990cd.chunk.js.LICENSE.txt",
     "static/media/arrow.0217964d.svg": "/static/media/arrow.0217964d.svg",
-    "static/media/bad-example.c0c50975.svg": "/static/media/bad-example.c0c50975.svg",
+    "static/media/bad-example.8bc3bc61.svg": "/static/media/bad-example.8bc3bc61.svg",
     "static/media/bottom-corner.faf8fa3d.svg": "/static/media/bottom-corner.faf8fa3d.svg",
-    "static/media/good-example.ebee5e0c.svg": "/static/media/good-example.ebee5e0c.svg",
-    "static/media/okay-example.d089afcf.svg": "/static/media/okay-example.d089afcf.svg",
-    "static/media/product-page.01f96b5c.svg": "/static/media/product-page.01f96b5c.svg",
+    "static/media/good-example.cbebe887.svg": "/static/media/good-example.cbebe887.svg",
+    "static/media/okay-example.80d1e09f.svg": "/static/media/okay-example.80d1e09f.svg",
+    "static/media/product-page.4e00c048.svg": "/static/media/product-page.4e00c048.svg",
     "static/media/top-corner.5a217fec.svg": "/static/media/top-corner.5a217fec.svg",
-    "static/media/unsure-example.bf5b0a24.svg": "/static/media/unsure-example.bf5b0a24.svg"
+    "static/media/unsure-example.8dc2cf8c.svg": "/static/media/unsure-example.8dc2cf8c.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.21b2c49e.js",
-    "static/js/2.cb65f835.chunk.js",
-    "static/js/main.048c00c6.chunk.js"
+    "static/js/2.435990cd.chunk.js",
+    "static/js/main.27de7951.chunk.js"
   ]
 }
