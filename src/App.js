@@ -20,8 +20,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
   },
   navContainer: {
-    position: "fixed",
-    bottom: "119px",
+    position: "relative",
   },
   backButton: {
     display: "inline-block",
@@ -45,8 +44,6 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: "10px",
   },
   skipButton: {
-    position: "fixed",
-    bottom: "25px",
     paddingTop: "10px",
     paddingBottom: "10px",
     "&:hover": { background: "none" },
@@ -81,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     margin: "20px",
-    padding: "50px",
+    height: "550px",
   },
 }));
 
