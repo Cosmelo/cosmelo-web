@@ -18,9 +18,12 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     margin: "auto",
     alignItems: "center",
+    justifyContent: "center",
+    height: "100vh",
   },
   navContainer: {
     position: "relative",
+    marginTop: "20px",
   },
   backButton: {
     display: "inline-block",
@@ -77,8 +80,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    margin: "20px",
-    height: "550px",
+    height: "475px",
   },
 }));
 
@@ -103,64 +105,62 @@ function App() {
   };
 
   return (
-    <div>
-      <ThemeProvider theme={theme}>
-        <TopCorner className={classes.topRightImg} />
-        <Box className={classes.page}>
-          <Box className={classes.contentContainer}>
-            {activeStep === 0 && <ScoringInfoPage />}
-            {activeStep === 1 && <ProductBarInfoPage />}
-            {activeStep === 2 && <CatalogueInfoPage />}
-            {activeStep === 3 && <FinishPage />}
-          </Box>
-          <Box className={classes.navContainer}>
-            <Button
-              onClick={handleBack}
-              disabled={activeStep === 0}
-              disableRipple
-              className={classes.backButton}
-            >
-              <Typography variant="button" style={{ color: Colours.TextGrey }}>
-                {activeStep === 0 ? "" : "back"}
-              </Typography>
-            </Button>
-            <Box className={classes.centred}>
-              <Box>
-                <Button
-                  variant="contained"
-                  className={classes.nextButton}
-                  onClick={activeStep === 3 ? handleFinish : handleNext}
-                >
-                  <Typography variant="button">
-                    {activeStep === 3 ? "finish" : "next"}
-                  </Typography>
-                </Button>
-              </Box>
-              <MobileStepper
-                variant="dots"
-                steps={4}
-                position="static"
-                activeStep={activeStep}
-                classes={{
-                  root: classes.stepper,
-                  dotActive: classes.stepperDotActive,
-                }}
-              />
-            </Box>
-          </Box>
+    <ThemeProvider theme={theme}>
+      <TopCorner className={classes.topRightImg} />
+      <Box className={classes.page}>
+        <Box className={classes.contentContainer}>
+          {activeStep === 0 && <ScoringInfoPage />}
+          {activeStep === 1 && <ProductBarInfoPage />}
+          {activeStep === 2 && <CatalogueInfoPage />}
+          {activeStep === 3 && <FinishPage />}
+        </Box>
+        <Box className={classes.navContainer}>
           <Button
-            onClick={handleSkip}
+            onClick={handleBack}
+            disabled={activeStep === 0}
             disableRipple
-            className={classes.skipButton}
+            className={classes.backButton}
           >
             <Typography variant="button" style={{ color: Colours.TextGrey }}>
-              Skip tutorial
+              {activeStep === 0 ? "" : "back"}
             </Typography>
           </Button>
+          <Box className={classes.centred}>
+            <Box>
+              <Button
+                variant="contained"
+                className={classes.nextButton}
+                onClick={activeStep === 3 ? handleFinish : handleNext}
+              >
+                <Typography variant="button">
+                  {activeStep === 3 ? "finish" : "next"}
+                </Typography>
+              </Button>
+            </Box>
+            <MobileStepper
+              variant="dots"
+              steps={4}
+              position="static"
+              activeStep={activeStep}
+              classes={{
+                root: classes.stepper,
+                dotActive: classes.stepperDotActive,
+              }}
+            />
+          </Box>
         </Box>
-        <BottomCorner className={classes.bottomLeftImg} />
-      </ThemeProvider>
-    </div>
+        <Button
+          onClick={handleSkip}
+          disableRipple
+          className={classes.skipButton}
+        >
+          <Typography variant="button" style={{ color: Colours.TextGrey }}>
+            Skip tutorial
+          </Typography>
+        </Button>
+      </Box>
+      <BottomCorner className={classes.bottomLeftImg} />
+    </ThemeProvider>
   );
 }
 
