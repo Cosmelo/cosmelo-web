@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
   },
   description: {
     marginTop: "38px",
-    maxWidth: "850px",
+    maxWidth: "700px",
     textAlign: "center",
   },
 }));

@@ -31,7 +31,7 @@ const useStyles = makeStyles({
     overflow: "hidden",
   },
   description: {
-    maxWidth: "850px",
+    maxWidth: "700px",
     textAlign: "center",
   },
 });
