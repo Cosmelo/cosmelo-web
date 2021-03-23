@@ -30,6 +30,10 @@ const useStyles = makeStyles({
     height: "100%",
     overflow: "hidden",
   },
+  description: {
+    maxWidth: "850px",
+    textAlign: "center",
+  },
 });
 
 const NiceTooltip = withStyles({
@@ -121,7 +125,7 @@ export const ProductBarInfoPage = () => {
           <Typography>category breakdown</Typography>
         </Box>
       </Box>
-      <Typography>
+      <Typography className={classes.description}>
         Each category is scored out of 3 points. There are 4 categories,
         amounting to a score out of 12 (3 points x 4 categories) for each
         product.
