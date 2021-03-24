@@ -98,7 +98,7 @@ function App() {
   };
 
   const handleSkip = () => {
-    setActiveStep(3);
+    setActiveStep(4);
   };
 
   const handleFinish = () => {
