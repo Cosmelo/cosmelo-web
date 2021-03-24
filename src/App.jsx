@@ -6,6 +6,7 @@ import { Colours } from "./utils/Constants";
 import Typography from "@material-ui/core/Typography";
 import MobileStepper from "@material-ui/core/MobileStepper";
 import { ScoringInfoPage } from "./components/ScoringInfoPage";
+import { SourceInfoPage } from "./components/SourceInfoPage";
 import { ProductBarInfoPage } from "./components/ProductBarInfoPage";
 import { CatalogueInfoPage } from "./components/CatalogueInfoPage";
 import { FinishPage } from "./components/FinishPage";
@@ -97,7 +98,7 @@ function App() {
   };
 
   const handleSkip = () => {
-    setActiveStep(3);
+    setActiveStep(4);
   };
 
   const handleFinish = () => {
@@ -110,9 +111,10 @@ function App() {
       <Box className={classes.page}>
         <Box className={classes.contentContainer}>
           {activeStep === 0 && <ScoringInfoPage />}
-          {activeStep === 1 && <ProductBarInfoPage />}
-          {activeStep === 2 && <CatalogueInfoPage />}
-          {activeStep === 3 && <FinishPage />}
+          {activeStep === 1 && <SourceInfoPage />}
+          {activeStep === 2 && <ProductBarInfoPage />}
+          {activeStep === 3 && <CatalogueInfoPage />}
+          {activeStep === 4 && <FinishPage />}
         </Box>
         <Box className={classes.navContainer}>
           <Button
@@ -130,16 +132,16 @@ function App() {
               <Button
                 variant="contained"
                 className={classes.nextButton}
-                onClick={activeStep === 3 ? handleFinish : handleNext}
+                onClick={activeStep === 4 ? handleFinish : handleNext}
               >
                 <Typography variant="button">
-                  {activeStep === 3 ? "finish" : "next"}
+                  {activeStep === 4 ? "finish" : "next"}
                 </Typography>
               </Button>
             </Box>
             <MobileStepper
               variant="dots"
-              steps={4}
+              steps={5}
               position="static"
               activeStep={activeStep}
               classes={{
