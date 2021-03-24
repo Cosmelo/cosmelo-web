@@ -17,13 +17,12 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
   },
   link: {
-    color: Colours.Skobeloff,
+    color: Colours.Link,
   },
 }));
 
 export const SourceInfoPage = () => {
   const classes = useStyles();
-  const preventDefault = (event) => event.preventDefault();
 
   return (
     <>
