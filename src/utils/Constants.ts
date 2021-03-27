@@ -13,5 +13,5 @@ export enum Colours {
   Black = "#000000",
   White = "#FFFFFF",
   Grey = "#F5F5F5",
-  TextGrey = "#A8A8A8",
+  TextGrey = "#707070",
 }

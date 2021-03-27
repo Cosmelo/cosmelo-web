@@ -108,59 +108,69 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <TopCorner className={classes.topRightImg} />
-      <Box className={classes.page}>
-        <Box className={classes.contentContainer}>
-          {activeStep === 0 && <ScoringInfoPage />}
-          {activeStep === 1 && <SourceInfoPage />}
-          {activeStep === 2 && <ProductBarInfoPage />}
-          {activeStep === 3 && <CatalogueInfoPage />}
-          {activeStep === 4 && <FinishPage />}
-        </Box>
-        <Box className={classes.navContainer}>
+      <main>
+        <Box className={classes.page}>
+          <Box className={classes.contentContainer}>
+            {activeStep === 0 && <ScoringInfoPage />}
+            {activeStep === 1 && <SourceInfoPage />}
+            {activeStep === 2 && <ProductBarInfoPage />}
+            {activeStep === 3 && <CatalogueInfoPage />}
+            {activeStep === 4 && <FinishPage />}
+          </Box>
+          <Box className={classes.navContainer}>
+            <Button
+              onClick={handleBack}
+              disabled={activeStep === 0}
+              disableRipple
+              className={classes.backButton}
+              aria-label="back"
+            >
+              {activeStep !== 0 && (
+                <Typography
+                  variant="button"
+                  style={{ color: Colours.TextGrey }}
+                >
+                  {activeStep === 0 ? "" : "back"}
+                </Typography>
+              )}
+            </Button>
+            <Box className={classes.centred}>
+              <Box>
+                <Button
+                  variant="contained"
+                  className={classes.nextButton}
+                  onClick={activeStep === 4 ? handleFinish : handleNext}
+                  aria-label={activeStep === 4 ? "finish" : "next"}
+                >
+                  <Typography variant="button">
+                    {activeStep === 4 ? "finish" : "next"}
+                  </Typography>
+                </Button>
+              </Box>
+              <MobileStepper
+                variant="dots"
+                steps={5}
+                position="static"
+                activeStep={activeStep}
+                classes={{
+                  root: classes.stepper,
+                  dotActive: classes.stepperDotActive,
+                }}
+              />
+            </Box>
+          </Box>
           <Button
-            onClick={handleBack}
-            disabled={activeStep === 0}
+            onClick={handleSkip}
             disableRipple
-            className={classes.backButton}
+            className={classes.skipButton}
+            aria-label="skip tutorial"
           >
             <Typography variant="button" style={{ color: Colours.TextGrey }}>
-              {activeStep === 0 ? "" : "back"}
+              Skip tutorial
             </Typography>
           </Button>
-          <Box className={classes.centred}>
-            <Box>
-              <Button
-                variant="contained"
-                className={classes.nextButton}
-                onClick={activeStep === 4 ? handleFinish : handleNext}
-              >
-                <Typography variant="button">
-                  {activeStep === 4 ? "finish" : "next"}
-                </Typography>
-              </Button>
-            </Box>
-            <MobileStepper
-              variant="dots"
-              steps={5}
-              position="static"
-              activeStep={activeStep}
-              classes={{
-                root: classes.stepper,
-                dotActive: classes.stepperDotActive,
-              }}
-            />
-          </Box>
         </Box>
-        <Button
-          onClick={handleSkip}
-          disableRipple
-          className={classes.skipButton}
-        >
-          <Typography variant="button" style={{ color: Colours.TextGrey }}>
-            Skip tutorial
-          </Typography>
-        </Button>
-      </Box>
+      </main>
       <BottomCorner className={classes.bottomLeftImg} />
     </ThemeProvider>
   );
