@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.2bfb207f.chunk.js",
-    "main.js.map": "/static/js/main.2bfb207f.chunk.js.map",
+    "main.js": "/static/js/main.8ef27b1a.chunk.js",
+    "main.js.map": "/static/js/main.8ef27b1a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a6a9d3ff.js",
     "runtime-main.js.map": "/static/js/runtime-main.a6a9d3ff.js.map",
     "static/js/2.1dc4520e.chunk.js": "/static/js/2.1dc4520e.chunk.js",
@@ -10,19 +10,19 @@
     "static/js/3.3bbefb61.chunk.js.map": "/static/js/3.3bbefb61.chunk.js.map",
     "index.html": "/index.html",
     "static/js/2.1dc4520e.chunk.js.LICENSE.txt": "/static/js/2.1dc4520e.chunk.js.LICENSE.txt",
-    "static/media/arrow.0217964d.svg": "/static/media/arrow.0217964d.svg",
-    "static/media/bad-example.c0c50975.svg": "/static/media/bad-example.c0c50975.svg",
-    "static/media/bottom-corner.fc39a761.svg": "/static/media/bottom-corner.fc39a761.svg",
-    "static/media/good-example.ebee5e0c.svg": "/static/media/good-example.ebee5e0c.svg",
-    "static/media/okay-example.d089afcf.svg": "/static/media/okay-example.d089afcf.svg",
-    "static/media/product-page.01f96b5c.svg": "/static/media/product-page.01f96b5c.svg",
-    "static/media/source-info.16187d86.svg": "/static/media/source-info.16187d86.svg",
-    "static/media/top-corner.8cf2e055.svg": "/static/media/top-corner.8cf2e055.svg",
-    "static/media/unsure-example.bf5b0a24.svg": "/static/media/unsure-example.bf5b0a24.svg"
+    "static/media/arrow.0c78c3f1.svg": "/static/media/arrow.0c78c3f1.svg",
+    "static/media/bad-example.d9707c1f.svg": "/static/media/bad-example.d9707c1f.svg",
+    "static/media/bottom-corner.4157d136.svg": "/static/media/bottom-corner.4157d136.svg",
+    "static/media/good-example.57f33ce3.svg": "/static/media/good-example.57f33ce3.svg",
+    "static/media/okay-example.406012a2.svg": "/static/media/okay-example.406012a2.svg",
+    "static/media/product-page.19723e76.svg": "/static/media/product-page.19723e76.svg",
+    "static/media/source-info.2715bf29.svg": "/static/media/source-info.2715bf29.svg",
+    "static/media/top-corner.86a7aa13.svg": "/static/media/top-corner.86a7aa13.svg",
+    "static/media/unsure-example.c1a4e073.svg": "/static/media/unsure-example.c1a4e073.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a6a9d3ff.js",
     "static/js/2.1dc4520e.chunk.js",
-    "static/js/main.2bfb207f.chunk.js"
+    "static/js/main.8ef27b1a.chunk.js"
   ]
 }
