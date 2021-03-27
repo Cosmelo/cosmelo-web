@@ -6,14 +6,14 @@ import { ScoringInfoPanel } from "./ScoringInfoPanel";
 
 export const ScoringInfoPage = () => {
   return (
-    <>
-      <Typography variant="h5">
+    <Box height="450px">
+      <Typography variant="h5" style={{ textAlign: "center" }}>
         We score products based on 4 measures of sustainability
       </Typography>
-      <Box margin="15px">
-        <Typography>Select a category to see how it's scored.</Typography>
-      </Box>
+      <Typography style={{ textAlign: "center", marginTop: "15px" }}>
+        Select a category to see how it's scored.
+      </Typography>
       <ScoringInfoPanel />
-    </>
+    </Box>
   );
 };
