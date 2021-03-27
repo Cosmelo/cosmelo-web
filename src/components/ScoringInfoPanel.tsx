@@ -49,10 +49,14 @@ const CategoryOption = ({
   category,
   selected,
   onClick,
+  tabIndex,
+  onKeyPress,
 }: {
   category: keyof ProductInfo;
   selected: boolean;
   onClick: () => void;
+  tabIndex: number;
+  onKeyPress: (e: any) => void;
 }) => {
   const classes = useOptionStyles();
 
@@ -69,6 +73,8 @@ const CategoryOption = ({
           className={selected ? classes.selected : classes.circle}
           style={{ backgroundColor: categories[category].colour }}
           onClick={onClick}
+          tabIndex={tabIndex}
+          onKeyPress={onKeyPress}
         />
       </div>
       <Box>
@@ -126,6 +132,12 @@ export const ScoringInfoPanel = () => {
             selected={selected === category}
             onClick={() => handleChange(category as ScoreCategories)}
             key={category}
+            tabIndex={0}
+            onKeyPress={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                handleChange(category as ScoreCategories);
+              }
+            }}
           />
         ))}
       </Box>
