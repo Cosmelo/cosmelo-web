@@ -76,7 +76,12 @@ export const ProductBarInfoPage = () => {
           alignItems="center"
         >
           <Box margin="20px 0 20px 0">
-            <GoodIcon style={{ fontSize: "64px" }} />
+            <GoodIcon
+              role="img"
+              aria-label="Overall score"
+              aria-hidden={false}
+              style={{ fontSize: "64px" }}
+            />
           </Box>
           <Box padding="10px">
             <Arrow />
