@@ -123,9 +123,11 @@ function App() {
             disableRipple
             className={classes.backButton}
           >
-            <Typography variant="button" style={{ color: Colours.TextGrey }}>
-              {activeStep === 0 ? "" : "back"}
-            </Typography>
+            {activeStep !== 0 && (
+              <Typography variant="button" style={{ color: Colours.TextGrey }}>
+                {activeStep === 0 ? "" : "back"}
+              </Typography>
+            )}
           </Button>
           <Box className={classes.centred}>
             <Box>

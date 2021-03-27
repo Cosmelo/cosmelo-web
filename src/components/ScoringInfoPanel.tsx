@@ -140,6 +140,7 @@ export const ScoringInfoPanel = () => {
           {categories[selected].label}
         </Typography>
         <Table size="small">
+          <caption>Scoring system explanation table</caption>
           <TableHead>
             <TableRow>
               <TableCell style={{ fontWeight: "bold" }}>Points</TableCell>
