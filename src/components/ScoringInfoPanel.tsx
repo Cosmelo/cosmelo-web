@@ -75,6 +75,7 @@ const CategoryOption = ({
           onClick={onClick}
           tabIndex={tabIndex}
           onKeyPress={onKeyPress}
+          aria-label={categories[category].label}
         />
       </div>
       <Box>
